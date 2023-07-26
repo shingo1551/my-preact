@@ -12,6 +12,7 @@ export function App() {
         <a href='/'>HOME</a>
         <a href='/ag-grid'>AG-GRID</a>
         <a href='#' onClick={() => location.href = '/ag-grid'}>AG-GRID by location.href</a>
+        <a href='#' onClick={() => history.pushState({}, null, '/ag-grid')}>AG-GRID by history.pushState</a>
       </div>
       <LocationProvider>
         <Router>
